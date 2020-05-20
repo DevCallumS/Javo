@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javo - Home</title>
+        <link id="color-mode" rel="stylesheet" href="../static/CSS/default.css">
+        <link rel="stylesheet" href="../static/CSS/signIn.css">
+        <meta charset="UTF-8">  
+        <script async src="../static/Java/buttonManager.js"></script>
+        <script async src="../static/Java/accountManager.js"></script>
+        <script async src="../static/Java/colorTheme.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo-container">
+                <a href="/home"><img id="site-logo" src="../static/Media/LogoDefault.png" alt="Javo Icon" height="65" width="65"></a>
+            </div>
+
+            <div class="search-box-container">
+                <input type="text" id="search-box" placeholder="Search..">
+                <img src="../static/Media/SearchIconDefault.png" id="search-button" alt="Search" height="37px" width="37px">
+            </div>
+
+            <div class="account-buttons-container">
+                <img id="user-settings" src="../static/Media/UserIconDefault.png" alt="User Settings" height="50px" width="50px">
+            </div>
+        </header>
+
+        <main>
+            <div id="user-settings-container">
+                <div id="user-details-container-id" class="user-details-container">
+                    <img src="../static/Media/UserIconDefault.png" alt="" id="user-detail-icon">
+                    <h2 id="user-detail-title">Title</h2>
+                </div>
+                <div id="log-in-container-id" class="log-in-container">
+                    <button id="log-in">Log In</button>
+                </div>
+                <div class="detail-1"></div>
+                <button id="theme-button">Change Theme</button> 
+            </div>
+
+            <div class="log-in-input-container">
+                <form method="post">
+                    <div class="username-cotainer">
+                        <input type="text" placeholder="Username" name="UIP" id="UIP">
+                    </div>
+
+                    <div class="password-container">
+                        <input type="password" placeholder="Password" name="PIP" id="PIP">
+                        <img id="show-password" src="../static/Media/ShowPasswordDefault.png" height="25" width="25">
+                    </div>
+
+                    <div class="signIn-button-container">
+                        <button type="submit" id="sign-in">Sign In</button>
+                    </div>
+                </form>
+                
+                <p id="not-allowed-data">{{ incorrectData }}</p>
+            </div>
+        </main>
+    </body>
+</html>

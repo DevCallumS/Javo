@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto;
+    cursor: default;
+}
+
+/* Search Bar Design */
+
+#search-button {
+    opacity: 1;
+    padding: 0 0 0 10px;
+    margin: 0 auto 0 0;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    opacity: 0.7;
+}
+
+
+#search-box {
+    width: 405px;
+    margin: 0 0 0 auto;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 2px;
+    outline: none;
+    line-height: 30px;
+    padding: 0 5px 0 5px;
+    cursor: text;
+}
+
+/* User Settings Design */
+
+#user-settings {
+    margin: 0 0 0 250px;
+    cursor: pointer;
+}
+
+#user-settings-container {
+    position: fixed;
+    height: 500px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 2px;
+    border-style: solid;
+    visibility: hidden;
+    display: none;
+    z-index: 10;
+}
+
+.user-details-container {
+    display: flex;
+    opacity: 0;
+    height: 50px;
+    margin: 10px 15px 5px 15px;
+    align-items: center;
+}
+
+#user-detail-icon {
+    height: 50px;
+    width: 50px;
+}
+
+#user-detail-title {
+    margin: 0 0 0 10px;
+}
+
+.detail-1 {
+    height: 2px;
+}
+
+.log-in-container {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#log-in {
+    display: flex;
+    border-color: #0000ff;
+    margin: 10px auto 0 auto;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(7, 35, 192);
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+}
+
+#theme-button {
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-family: Roboto;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(7, 35, 192);
+    height: 40px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+}
+
+
+/* Header Design */
+header {
+    display: flex;
+    width: 100%;
+    height: 12vh;
+}
+
+.logo-container, .search-box-container, .account-buttons-container {
+    display: flex;
+}
+
+.site-logo {
+    cursor: pointer;
+}
+
+.logo-container {
+    flex: 1;
+    margin: 10px 0 0 10px;
+}
+
+.search-box-container {
+    align-items: center;
+    flex: 2;
+}
+
+.account-buttons-container {
+    align-items: center;
+    flex: 1;
+}
