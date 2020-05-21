@@ -5,8 +5,8 @@ var signInButton = document.getElementById("sign-in");
 var errorMessage = document.getElementById("not-allowed-data");
 var UIP = document.getElementById("UIP");
 var PIP = document.getElementById("PIP");
-var RePIP = document.getElementById("RePIP")
-var email = document.getElementById("email")
+var RePIP = document.getElementById("RePIP");
+var email = document.getElementById("email");
 
 showPasswordButton.onclick = function () {
     if(isShowingPassword == false) {
